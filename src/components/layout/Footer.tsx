@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { getSiteSettings } from "@/lib/content";
-import { InstagramIcon, FacebookIcon, LinkedinIcon } from "@/components/icons/SocialIcons";
+import {
+  InstagramIcon,
+  FacebookIcon,
+  LinkedinIcon,
+} from "@/components/icons/SocialIcons";
 
 export default function Footer() {
   const { name, nav, contact, social, footer } = getSiteSettings();
@@ -43,7 +47,10 @@ export default function Footer() {
             <ul className="space-y-2">
               {nav.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="text-white/80 hover:text-white">
+                  <Link
+                    href={item.href}
+                    className="text-white/80 hover:text-white"
+                  >
                     {item.label}
                   </Link>
                 </li>
@@ -58,7 +65,10 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
-                <a href={`mailto:${contact.email}`} className="text-white/80 hover:text-white">
+                <a
+                  href={`mailto:${contact.email}`}
+                  className="text-white/80 hover:text-white"
+                >
                   {contact.email}
                 </a>
               </li>
@@ -72,7 +82,10 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+                <MapPin
+                  className="mt-0.5 h-4 w-4 shrink-0"
+                  aria-hidden="true"
+                />
                 <span className="text-white/80">{contact.address}</span>
               </li>
             </ul>
@@ -100,9 +113,14 @@ export default function Footer() {
           )}
         </div>
 
-        <p className="mt-10 border-t border-white/10 pt-6 text-xs text-white/60">
-          {footer.copyright}
-        </p>
+        <div className="mt-10 border-t border-white/10 pt-6">
+          <p className="text-xs text-white/60">{footer.copyright}</p>
+          <div className="mt-3 text-xs text-white/70">
+            <Link href="/privacy-policy" className="hover:text-white">
+              Privacy Policy
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );
