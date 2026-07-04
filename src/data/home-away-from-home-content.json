@@ -279,7 +279,7 @@
         "Consistent, trained caregivers your child gets to know",
         "One less logistics problem during an already demanding week"
       ],
-      "startingRate": "PLACEHOLDER — $300/day (confirm real rate with Carol before launch)",
+      "startingRate": "PLACEHOLDER — $500/day (confirm real rate with Carol before launch)",
       "cta": { "label": "Learn more", "href": "/services" },
       "imageAlt": "Child playing safely in a bright daycare room"
     },
@@ -295,7 +295,7 @@
         "Opportunities for social connection with peers",
         "Peace of mind for family members during work hours"
       ],
-      "startingRate": "PLACEHOLDER — $75/day (confirm real rate with Carol before launch)",
+      "startingRate": "PLACEHOLDER — $100/day (confirm real rate with Carol before launch)",
       "cta": { "label": "Learn more", "href": "/services" },
       "imageAlt": "Adults socializing together in a comfortable common room"
     },
@@ -327,7 +327,7 @@
         "Continuity of care in a familiar home environment",
         "Trained staff who adapt to your household's routine"
       ],
-      "startingRate": "PLACEHOLDER — $45/hour (confirm real rate with Carol before launch)",
+      "startingRate": "PLACEHOLDER — $65/hour (confirm real rate with Carol before launch)",
       "cta": { "label": "Learn more", "href": "/services" },
       "imageAlt": "Caregiver assisting a family member at home"
     }
