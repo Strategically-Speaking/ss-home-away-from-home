@@ -24,6 +24,7 @@
       { "label": "Home", "href": "/" },
       { "label": "About", "href": "/about" },
       { "label": "Services", "href": "/services" },
+      { "label": "Pricing", "href": "/pricing" },
       { "label": "Contact", "href": "/contact" }
     ],
     "footer": {
@@ -101,9 +102,18 @@
           "type": "list",
           "heading": "What we stand for",
           "items": [
-            { "title": "Dependable", "description": "We're here 24 hours a day, so families never have to piece together a backup plan." },
-            { "title": "Trustworthy", "description": "Every staff member brings a minimum of five years of clinical and developmental experience." },
-            { "title": "Transparency", "description": "We keep families informed every step of the way — no surprises, no guesswork." }
+            {
+              "title": "Dependable",
+              "description": "We're here 24 hours a day, so families never have to piece together a backup plan."
+            },
+            {
+              "title": "Trustworthy",
+              "description": "Every staff member brings a minimum of five years of clinical and developmental experience."
+            },
+            {
+              "title": "Transparency",
+              "description": "We keep families informed every step of the way — no surprises, no guesswork."
+            }
           ]
         }
       ],
@@ -137,6 +147,37 @@
         "description": "24-hour daycare, day service, 24-hour fragile care, and in-home respite care — dependable, clinically trained support for every age and situation."
       }
     },
+    "pricing": {
+      "hero": {
+        "headline": "Simple, transparent starting rates",
+        "subheadline": "Use this page to compare service costs and get a quick estimate before you contact us."
+      },
+      "sections": [
+        {
+          "id": "pricing-note",
+          "type": "text",
+          "heading": "How pricing works",
+          "body": "The rates below are starting points. Final pricing depends on schedule, level of care, staffing needs, and care location. During intake, we confirm the exact scope and provide a clear quote."
+        },
+        {
+          "id": "family-access",
+          "type": "text",
+          "heading": "Stay connected in real time",
+          "body": "Clients will be able to log in anytime and check in on their loved ones through real-time camera access around our facility."
+        },
+        {
+          "id": "pricing-cta",
+          "type": "cta",
+          "heading": "Need an exact quote for your family?",
+          "body": "Start an intake and we will walk through your needs, timeline, and best-fit service.",
+          "cta": { "label": "Start an Intake", "href": "/contact" }
+        }
+      ],
+      "seo": {
+        "title": "Pricing | Home Away from Home | Pelham, AL",
+        "description": "See starting rates for daycare, day service, fragile care, and in-home respite care at Home Away from Home."
+      }
+    },
     "contact": {
       "hero": {
         "headline": "Let's find the right fit for your family",
@@ -147,9 +188,23 @@
           "id": "contact-options",
           "type": "contact-info",
           "options": [
-            { "type": "email", "label": "Start an intake", "description": "Tell us about your family's situation — we respond promptly", "action": "Email us", "url": "mailto:wecare@homeawayfromhome.com" },
-            { "type": "phone", "label": "Call us", "description": "(205) 999-7777 — available 24 hours" },
-            { "type": "address", "label": "Visit us", "description": "123 Main St, Pelham, AL 35124 — PLACEHOLDER, confirm real address" }
+            {
+              "type": "email",
+              "label": "Start an intake",
+              "description": "Tell us about your family's situation — we respond promptly",
+              "action": "Email us",
+              "url": "mailto:wecare@homeawayfromhome.com"
+            },
+            {
+              "type": "phone",
+              "label": "Call us",
+              "description": "(205) 999-7777 — available 24 hours"
+            },
+            {
+              "type": "address",
+              "label": "Visit us",
+              "description": "123 Main St, Pelham, AL 35124 — PLACEHOLDER, confirm real address"
+            }
           ]
         },
         {
@@ -159,12 +214,49 @@
           "description": "This isn't a commitment — it's how we figure out fit. A team member will follow up to talk through next steps.",
           "destinationEmail": "wecare@homeawayfromhome.com",
           "fields": [
-            { "name": "name", "label": "Your name", "type": "text", "required": true },
-            { "name": "email", "label": "Email", "type": "email", "required": true },
-            { "name": "phone", "label": "Phone", "type": "tel", "required": false },
-            { "name": "serviceInterest", "label": "Service you're interested in", "type": "select", "options": ["24-Hour Daycare", "Day Service", "24-Hour Care for the Fragile", "In-Home Respite Care", "Not sure — help me figure it out"], "required": true },
-            { "name": "ageRange", "label": "Age of the person needing care", "type": "text", "required": true },
-            { "name": "details", "label": "Tell us more about your situation", "type": "textarea", "required": false }
+            {
+              "name": "name",
+              "label": "Your name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "email",
+              "label": "Email",
+              "type": "email",
+              "required": true
+            },
+            {
+              "name": "phone",
+              "label": "Phone",
+              "type": "tel",
+              "required": false
+            },
+            {
+              "name": "serviceInterest",
+              "label": "Service you're interested in",
+              "type": "select",
+              "options": [
+                "24-Hour Daycare",
+                "Day Service",
+                "24-Hour Care for the Fragile",
+                "In-Home Respite Care",
+                "Not sure — help me figure it out"
+              ],
+              "required": true
+            },
+            {
+              "name": "ageRange",
+              "label": "Age of the person needing care",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "details",
+              "label": "Tell us more about your situation",
+              "type": "textarea",
+              "required": false
+            }
           ]
         }
       ],
@@ -263,7 +355,10 @@
   "stats": [
     { "value": "10", "label": "Years serving Pelham families (since 2016)" },
     { "value": "24/7", "label": "Care availability" },
-    { "value": "5+ yrs", "label": "Minimum clinical experience per staff member" },
+    {
+      "value": "5+ yrs",
+      "label": "Minimum clinical experience per staff member"
+    },
     { "value": "100%", "label": "Trained clinical & developmental staff" }
   ]
 }

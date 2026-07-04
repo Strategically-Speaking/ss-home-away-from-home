@@ -124,6 +124,7 @@ export interface Pages {
   home: Page;
   about: Page;
   services: Page;
+  pricing: Page;
   contact: Page;
 }
 
