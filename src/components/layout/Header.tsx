@@ -13,7 +13,7 @@ export default function Header() {
   const { nav, logo, contact } = getSiteSettings();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-secondary/40 bg-surface/95 backdrop-blur supports-[backdrop-filter]:bg-surface/80">
+    <header className="sticky top-0 z-50 border-b border-secondary/40 bg-surface/95 backdrop-blur supports-backdrop-filter:bg-surface/80">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         <Link
           href="/"
@@ -22,13 +22,12 @@ export default function Header() {
           {logo.text}
         </Link>
 
-        <nav
-          aria-label="Primary"
-          className="hidden items-center gap-8 md:flex"
-        >
+        <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">
           {nav.map((item) => {
             const isActive =
-              item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+              item.href === "/"
+                ? pathname === "/"
+                : pathname.startsWith(item.href);
             return (
               <Link
                 key={item.href}
@@ -36,7 +35,7 @@ export default function Header() {
                 aria-current={isActive ? "page" : undefined}
                 className={cn(
                   "font-body text-sm font-medium transition-colors hover:text-primary",
-                  isActive ? "text-primary" : "text-neutral-700"
+                  isActive ? "text-primary" : "text-neutral-700",
                 )}
               >
                 {item.label}
@@ -67,7 +66,7 @@ export default function Header() {
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
-          className="inline-flex items-center justify-center rounded-md p-2 text-neutral-700 md:hidden"
+          className="relative z-60 inline-flex items-center justify-center rounded-md p-2 text-neutral-700 md:hidden"
         >
           {open ? (
             <X className="h-6 w-6" aria-hidden="true" />
@@ -81,12 +80,14 @@ export default function Header() {
         <nav
           id="mobile-nav"
           aria-label="Primary mobile"
-          className="border-t border-secondary/40 bg-surface md:hidden"
+          className="absolute inset-x-0 top-full z-55 border-t border-secondary/40 bg-surface shadow-md md:hidden"
         >
           <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 sm:px-6">
             {nav.map((item) => {
               const isActive =
-                item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+                item.href === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(item.href);
               return (
                 <Link
                   key={item.href}
@@ -95,7 +96,9 @@ export default function Header() {
                   aria-current={isActive ? "page" : undefined}
                   className={cn(
                     "rounded-md px-3 py-2 font-body text-base font-medium",
-                    isActive ? "bg-primary/10 text-primary" : "text-neutral-700"
+                    isActive
+                      ? "bg-primary/10 text-primary"
+                      : "text-neutral-700",
                   )}
                 >
                   {item.label}
