@@ -95,7 +95,9 @@ export default function AboutPage() {
                   <h3 className="font-heading text-lg font-semibold text-primary-dark">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-sm text-neutral-600">{item.description}</p>
+                  <p className="mt-2 text-sm text-neutral-600">
+                    {item.description}
+                  </p>
                 </div>
               ))}
             </div>
