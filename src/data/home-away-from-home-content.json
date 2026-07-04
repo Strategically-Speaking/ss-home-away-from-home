@@ -1,0 +1,269 @@
+{
+  "siteSettings": {
+    "name": "Home Away from Home",
+    "tagline": "Dependable care, any hour, every age.",
+    "mission": "To provide a safe, welcoming environment for care — whether that's in your home or ours.",
+    "logo": {
+      "text": "Home Away from Home",
+      "hasImage": false,
+      "imageAlt": ""
+    },
+    "contact": {
+      "email": "carol.strong@homeawayfromhome.com",
+      "phone": "(205) 999-7777",
+      "address": "123 Main St, Pelham, AL 35124",
+      "hours": "Open 24 hours"
+    },
+    "social": {
+      "linkedin": "",
+      "instagram": "PLACEHOLDER — add Instagram URL",
+      "facebook": "PLACEHOLDER — add Facebook URL",
+      "twitter": ""
+    },
+    "nav": [
+      { "label": "Home", "href": "/" },
+      { "label": "About", "href": "/about" },
+      { "label": "Services", "href": "/services" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "footer": {
+      "tagline": "Dependable care, any hour, every age.",
+      "copyright": "© 2026 Home Away from Home. All rights reserved."
+    },
+    "brand": {
+      "primaryColor": "#4A7C74",
+      "secondaryColor": "#D9C9B0",
+      "headingFont": "Fraunces",
+      "bodyFont": "Inter"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "headline": "Care you can trust, any hour of the day",
+        "subheadline": "Home Away from Home provides dependable, clinically trained care for children and adults — in our facility or yours, 24 hours a day.",
+        "ctaPrimary": { "label": "Start an Intake", "href": "/contact" },
+        "ctaSecondary": { "label": "See Our Services", "href": "/services" },
+        "imageAlt": "Caregiver sitting with a family member in a calm, sunlit room"
+      },
+      "sections": [
+        {
+          "id": "services-preview",
+          "type": "cards",
+          "heading": "How We Help",
+          "subheading": "Four ways we support families through stressful or complicated caregiving situations",
+          "items": "ref:services"
+        },
+        {
+          "id": "social-proof",
+          "type": "testimonial",
+          "heading": "What families say",
+          "featured": "ref:testimonials[0]"
+        },
+        {
+          "id": "stats",
+          "type": "stats-strip",
+          "items": "ref:stats"
+        },
+        {
+          "id": "cta-section",
+          "type": "cta",
+          "heading": "Not sure which service fits your family?",
+          "body": "Start an intake conversation. We'll help you find the right fit — no pressure, no obligation.",
+          "cta": { "label": "Start an Intake", "href": "/contact" }
+        }
+      ],
+      "seo": {
+        "title": "Home Away from Home — 24-Hour Family Care in Pelham, AL",
+        "description": "Dependable, clinically trained care for children and adults of every age — 24-hour daycare, day service, fragile care, and in-home respite in Pelham, AL."
+      }
+    },
+    "about": {
+      "hero": {
+        "headline": "Care built by someone who's seen the gap firsthand",
+        "subheadline": "Founded in 2016, Home Away from Home exists to give families relief in stressful or complicated caregiving situations."
+      },
+      "sections": [
+        {
+          "id": "story",
+          "type": "text",
+          "heading": "Our story",
+          "body": "As a pediatric critical care nurse, our founder Carol Strong saw many coworkers struggle to find childcare that supported their odd work hours. In that role, she also saw countless parents worn down by the constant demands of caring for a child with special needs — parents who pieced together makeshift home care plans out of necessity. That experience made Carol want to help families across every age group and every kind of challenge. Home Away from Home was founded in 2016 to be the dependable option families couldn't find anywhere else."
+        },
+        {
+          "id": "founder",
+          "type": "text",
+          "heading": "Meet our founder",
+          "body": "Carol Strong, Founder — A former pediatric critical care nurse, Carol founded Home Away from Home in 2016 after seeing firsthand how hard it was for working families and caregivers of medically fragile or special needs individuals to find dependable, clinically trained care. Under her leadership, our team includes staff with a minimum of five years of clinical and developmental experience, plus social workers, a nutritionist, and a dietitian on staff."
+        },
+        {
+          "id": "values",
+          "type": "list",
+          "heading": "What we stand for",
+          "items": [
+            { "title": "Dependable", "description": "We're here 24 hours a day, so families never have to piece together a backup plan." },
+            { "title": "Trustworthy", "description": "Every staff member brings a minimum of five years of clinical and developmental experience." },
+            { "title": "Transparency", "description": "We keep families informed every step of the way — no surprises, no guesswork." }
+          ]
+        }
+      ],
+      "seo": {
+        "title": "About Home Away from Home | Our Story & Team | Pelham, AL",
+        "description": "Founded in 2016 by a former pediatric critical care nurse, Home Away from Home provides dependable, clinically trained care for families in Pelham, AL."
+      }
+    },
+    "services": {
+      "hero": {
+        "headline": "Four ways we support your family",
+        "subheadline": "Whichever situation you're navigating, we have a trained team ready to help — in our facility or yours."
+      },
+      "sections": [
+        {
+          "id": "services-list",
+          "type": "cards",
+          "heading": "Our Services",
+          "items": "ref:services"
+        },
+        {
+          "id": "fit-cta",
+          "type": "cta",
+          "heading": "Not sure which service is the right fit?",
+          "body": "Tell us about your situation and we'll help you figure out what makes sense — that's what intake is for.",
+          "cta": { "label": "Start an Intake", "href": "/contact" }
+        }
+      ],
+      "seo": {
+        "title": "Our Services | Home Away from Home | Pelham, AL",
+        "description": "24-hour daycare, day service, 24-hour fragile care, and in-home respite care — dependable, clinically trained support for every age and situation."
+      }
+    },
+    "contact": {
+      "hero": {
+        "headline": "Let's find the right fit for your family",
+        "subheadline": "Reach out any time, day or night. We'll walk through your situation together and start an intake."
+      },
+      "sections": [
+        {
+          "id": "contact-options",
+          "type": "contact-info",
+          "options": [
+            { "type": "email", "label": "Start an intake", "description": "Tell us about your family's situation — we respond promptly", "action": "Email us", "url": "mailto:wecare@homeawayfromhome.com" },
+            { "type": "phone", "label": "Call us", "description": "(205) 999-7777 — available 24 hours" },
+            { "type": "address", "label": "Visit us", "description": "123 Main St, Pelham, AL 35124 — PLACEHOLDER, confirm real address" }
+          ]
+        },
+        {
+          "id": "intake-form",
+          "type": "form",
+          "heading": "Tell us about your family's needs",
+          "description": "This isn't a commitment — it's how we figure out fit. A team member will follow up to talk through next steps.",
+          "destinationEmail": "wecare@homeawayfromhome.com",
+          "fields": [
+            { "name": "name", "label": "Your name", "type": "text", "required": true },
+            { "name": "email", "label": "Email", "type": "email", "required": true },
+            { "name": "phone", "label": "Phone", "type": "tel", "required": false },
+            { "name": "serviceInterest", "label": "Service you're interested in", "type": "select", "options": ["24-Hour Daycare", "Day Service", "24-Hour Care for the Fragile", "In-Home Respite Care", "Not sure — help me figure it out"], "required": true },
+            { "name": "ageRange", "label": "Age of the person needing care", "type": "text", "required": true },
+            { "name": "details", "label": "Tell us more about your situation", "type": "textarea", "required": false }
+          ]
+        }
+      ],
+      "seo": {
+        "title": "Contact Home Away from Home | Start an Intake | Pelham, AL",
+        "description": "Reach out any time, day or night. Start an intake conversation and we'll help you find the right care fit for your family."
+      }
+    }
+  },
+  "services": [
+    {
+      "slug": "24-hour-daycare",
+      "name": "24-Hour Daycare",
+      "tagline": "Care around the clock, for the hours other daycares can't cover",
+      "shortDescription": "For well children of parents who work all hours of the day and night.",
+      "fullDescription": "Our 24-hour daycare is built for the reality of shift work, odd hours, and unpredictable schedules. Whether you're a nurse working overnight or a parent covering an early morning shift, your child is cared for by trained staff around the clock — not just during standard daycare hours.",
+      "whoItsFor": "Parents and guardians of well children who work overnight, early morning, weekend, or rotating shifts.",
+      "outcomes": [
+        "Reliable coverage regardless of your work schedule",
+        "Consistent, trained caregivers your child gets to know",
+        "One less logistics problem during an already demanding week"
+      ],
+      "startingRate": "PLACEHOLDER — $45/day (confirm real rate with Carol before launch)",
+      "cta": { "label": "Learn more", "href": "/services" },
+      "imageAlt": "Child playing safely in a bright daycare room"
+    },
+    {
+      "slug": "day-service",
+      "name": "Day Service",
+      "tagline": "Safety, structure, and socialization during the day",
+      "shortDescription": "For adults, with and without select mental health issues, who require observation to preserve their safety.",
+      "fullDescription": "Day Service gives adults a safe, structured place to spend the day — with trained staff on hand to preserve their safety and wellbeing. It's also a good fit for adults who simply want more socialization and connection during the day.",
+      "whoItsFor": "Adults who need daytime observation for safety, and adults looking for structured socialization.",
+      "outcomes": [
+        "A safe, supervised environment during the day",
+        "Opportunities for social connection with peers",
+        "Peace of mind for family members during work hours"
+      ],
+      "startingRate": "PLACEHOLDER — $60/day (confirm real rate with Carol before launch)",
+      "cta": { "label": "Learn more", "href": "/services" },
+      "imageAlt": "Adults socializing together in a comfortable common room"
+    },
+    {
+      "slug": "24-hour-fragile-care",
+      "name": "24-Hour Care for the Fragile",
+      "tagline": "Clinical-level care, around the clock",
+      "shortDescription": "For medically fragile children and adults.",
+      "fullDescription": "Medically fragile children and adults need more than supervision — they need trained clinical judgment available at all hours. Our staff bring a minimum of five years of clinical and developmental experience, with social workers, a nutritionist, and a dietitian on staff to support complex needs.",
+      "whoItsFor": "Families of medically fragile children or adults who need round-the-clock clinical-level care.",
+      "outcomes": [
+        "24-hour access to clinically trained staff",
+        "Coordinated support from social workers, a nutritionist, and a dietitian",
+        "Relief for families managing complex medical needs"
+      ],
+      "startingRate": "PLACEHOLDER — contact for custom quote based on care needs",
+      "cta": { "label": "Learn more", "href": "/services" },
+      "imageAlt": "Caregiver attentively supporting a medically fragile client"
+    },
+    {
+      "slug": "in-home-respite-care",
+      "name": "In-Home Respite Care",
+      "tagline": "Relief, without leaving home",
+      "shortDescription": "For all ages who require in-home care, giving families the opportunity for relief.",
+      "fullDescription": "Sometimes the best care happens at home. Our in-home respite care serves all ages and gives family caregivers a real opportunity to rest, recharge, or handle other responsibilities — knowing their loved one is in trained, dependable hands.",
+      "whoItsFor": "Families of any age who need in-home support and a break from full-time caregiving duties.",
+      "outcomes": [
+        "Real relief for primary family caregivers",
+        "Continuity of care in a familiar home environment",
+        "Trained staff who adapt to your household's routine"
+      ],
+      "startingRate": "PLACEHOLDER — $30/hour (confirm real rate with Carol before launch)",
+      "cta": { "label": "Learn more", "href": "/services" },
+      "imageAlt": "Caregiver assisting a family member at home"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "PLACEHOLDER — replace with real quote. Home Away from Home gave us our nights back. Knowing someone qualified was watching our son let us finally sleep.",
+      "name": "Placeholder Parent",
+      "title": "24-Hour Daycare Family",
+      "org": ""
+    },
+    {
+      "quote": "PLACEHOLDER — replace with real quote. The respite care team treated my mother like family. I could finally take a weekend for myself without worry.",
+      "name": "Placeholder Family Member",
+      "title": "In-Home Respite Care Client",
+      "org": ""
+    },
+    {
+      "quote": "PLACEHOLDER — replace with real quote. Their staff's clinical background made all the difference for my daughter's care.",
+      "name": "Placeholder Parent",
+      "title": "24-Hour Fragile Care Family",
+      "org": ""
+    }
+  ],
+  "stats": [
+    { "value": "10", "label": "Years serving Pelham families (since 2016)" },
+    { "value": "24/7", "label": "Care availability" },
+    { "value": "5+ yrs", "label": "Minimum clinical experience per staff member" },
+    { "value": "100%", "label": "Trained clinical & developmental staff" }
+  ]
+}
