@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { getService, getServices } from "@/lib/content";
+import { buildMetadata } from "@/lib/seo";
 
 interface ServicePageProps {
   params: Promise<{ slug: string }>;
@@ -22,15 +23,18 @@ export async function generateMetadata({
 
   if (!service) {
     return {
-      title: "Service Not Found | Home Away from Home",
+      title: { absolute: "Service Not Found | Home Away from Home" },
       description: "The requested service could not be found.",
     };
   }
 
-  return {
-    title: `${service.name} | Home Away from Home`,
-    description: service.shortDescription,
-  };
+  return buildMetadata(
+    {
+      title: `${service.name} | Home Away from Home`,
+      description: service.shortDescription,
+    },
+    `/services/${slug}`,
+  );
 }
 
 export default async function ServiceDetailPage({ params }: ServicePageProps) {

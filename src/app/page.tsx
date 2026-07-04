@@ -8,10 +8,10 @@ import TestimonialCard from "@/components/cards/TestimonialCard";
 import StatCard from "@/components/cards/StatCard";
 import { getPage, getServices, getFeaturedTestimonial, getStats } from "@/lib/content";
 import { placeholderImage } from "@/lib/utils";
+import { buildMetadata } from "@/lib/seo";
 
 export function generateMetadata(): Metadata {
-  const { seo } = getPage("home");
-  return { title: seo.title, description: seo.description };
+  return buildMetadata(getPage("home").seo, "/");
 }
 
 export default function HomePage() {

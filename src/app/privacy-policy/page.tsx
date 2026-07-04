@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { getSiteSettings } from "@/lib/content";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy | Home Away from Home",
-  description:
-    "Learn how Home Away from Home collects, uses, and protects personal information, including policies for live camera access.",
-};
+export const metadata: Metadata = buildMetadata(
+  {
+    title: "Privacy Policy | Home Away from Home",
+    description:
+      "Learn how Home Away from Home collects, uses, and protects personal information, including policies for live camera access.",
+  },
+  "/privacy-policy",
+);
 
 export default function PrivacyPolicyPage() {
   const { contact } = getSiteSettings();

@@ -4,10 +4,10 @@ import Button from "@/components/ui/Button";
 import SectionLabel from "@/components/ui/SectionLabel";
 import ServiceCard from "@/components/cards/ServiceCard";
 import { getPage, getServices } from "@/lib/content";
+import { buildMetadata } from "@/lib/seo";
 
 export function generateMetadata(): Metadata {
-  const { seo } = getPage("services");
-  return { title: seo.title, description: seo.description };
+  return buildMetadata(getPage("services").seo, "/services");
 }
 
 export default function ServicesPage() {

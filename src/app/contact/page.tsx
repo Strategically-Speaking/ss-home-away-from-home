@@ -3,10 +3,10 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { getPage } from "@/lib/content";
 import IntakeForm from "@/components/forms/IntakeForm";
 import type { ContactOption } from "@/lib/types";
+import { buildMetadata } from "@/lib/seo";
 
 export function generateMetadata(): Metadata {
-  const { seo } = getPage("contact");
-  return { title: seo.title, description: seo.description };
+  return buildMetadata(getPage("contact").seo, "/contact");
 }
 
 const iconMap = {

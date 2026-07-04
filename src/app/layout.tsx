@@ -5,6 +5,7 @@ import SkipLink from "@/components/layout/SkipLink";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { getSiteSettings } from "@/lib/content";
+import { SITE_URL } from "@/lib/seo";
 
 const fraunces = Fraunces({
   variable: "--font-heading",
@@ -26,7 +27,7 @@ export function generateMetadata(): Metadata {
       template: `%s | ${name}`,
     },
     description: mission,
-    metadataBase: new URL("https://homeawayfromhome.com"),
+    metadataBase: new URL(SITE_URL),
     openGraph: {
       title: name,
       description: mission,

@@ -3,10 +3,10 @@ import { ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { getPage, getServices } from "@/lib/content";
+import { buildMetadata } from "@/lib/seo";
 
 export function generateMetadata(): Metadata {
-  const { seo } = getPage("pricing");
-  return { title: seo.title, description: seo.description };
+  return buildMetadata(getPage("pricing").seo, "/pricing");
 }
 
 export default function PricingPage() {

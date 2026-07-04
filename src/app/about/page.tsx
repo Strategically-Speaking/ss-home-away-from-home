@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { getPage } from "@/lib/content";
 import { placeholderImage } from "@/lib/utils";
+import { buildMetadata } from "@/lib/seo";
 import SectionLabel from "@/components/ui/SectionLabel";
 import type { ValueListItem } from "@/lib/types";
 
 export function generateMetadata(): Metadata {
-  const { seo } = getPage("about");
-  return { title: seo.title, description: seo.description };
+  return buildMetadata(getPage("about").seo, "/about");
 }
 
 export default function AboutPage() {
