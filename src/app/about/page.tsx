@@ -55,12 +55,24 @@ export default function AboutPage() {
 
       {founder && (
         <section className="bg-secondary/30 py-16 sm:py-20">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6">
-            <SectionLabel>Leadership</SectionLabel>
-            <h2 className="font-heading text-3xl font-semibold text-primary-dark sm:text-4xl">
-              {founder.heading}
-            </h2>
-            <p className="mt-4 text-neutral-700">{founder.body}</p>
+          <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 md:grid-cols-2 md:items-center">
+            <div className="relative h-96 overflow-hidden rounded-3xl shadow-md sm:h-120">
+              <Image
+                src={placeholderImage("about-founder", 900, 1200)}
+                alt="Founder placeholder portrait"
+                fill
+                sizes="(min-width: 768px) 40vw, 100vw"
+                className="object-cover"
+              />
+            </div>
+
+            <div>
+              <SectionLabel>Leadership</SectionLabel>
+              <h2 className="font-heading text-3xl font-semibold text-primary-dark sm:text-4xl">
+                {founder.heading}
+              </h2>
+              <p className="mt-4 text-neutral-700">{founder.body}</p>
+            </div>
           </div>
         </section>
       )}
