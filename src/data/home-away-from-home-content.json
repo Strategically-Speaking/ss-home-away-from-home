@@ -9,7 +9,7 @@
       "imageAlt": ""
     },
     "contact": {
-      "email": "carol.strong@homeawayfromhome.com",
+      "email": "carol@homeawayfromhome.com",
       "phone": "(205) 999-7777",
       "address": "123 Main St, Pelham, AL 35124",
       "hours": "Open 24 hours"
@@ -89,13 +89,13 @@
           "id": "story",
           "type": "text",
           "heading": "Our story",
-          "body": "As a pediatric critical care nurse, our founder Carol Strong saw many coworkers struggle to find childcare that supported their odd work hours. In that role, she also saw countless parents worn down by the constant demands of caring for a child with special needs — parents who pieced together makeshift home care plans out of necessity. That experience made Carol want to help families across every age group and every kind of challenge. Home Away from Home was founded in 2016 to be the dependable option families couldn't find anywhere else."
+          "body": "As a pediatric critical care nurse, our founder Carol S. saw many coworkers struggle to find childcare that supported their odd work hours. In that role, she also saw countless parents worn down by the constant demands of caring for a child with special needs — parents who pieced together makeshift home care plans out of necessity. That experience made Carol S. want to help families across every age group and every kind of challenge. Home Away from Home was founded in 2016 to be the dependable option families couldn't find anywhere else."
         },
         {
           "id": "founder",
           "type": "text",
           "heading": "Meet our founder",
-          "body": "Carol Strong, Founder — A former pediatric critical care nurse, Carol founded Home Away from Home in 2016 after seeing firsthand how hard it was for working families and caregivers of medically fragile or special needs individuals to find dependable, clinically trained care. Under her leadership, our team includes staff with a minimum of five years of clinical and developmental experience, plus social workers, a nutritionist, and a dietitian on staff."
+          "body": "Carol S., Founder — A former pediatric critical care nurse, Carol S. founded Home Away from Home in 2016 after seeing firsthand how hard it was for working families and caregivers of medically fragile or special needs individuals to find dependable, clinically trained care. Under her leadership, our team includes staff with a minimum of five years of clinical and developmental experience, plus social workers, a nutritionist, and a dietitian on staff."
         },
         {
           "id": "values",
@@ -279,7 +279,7 @@
         "Consistent, trained caregivers your child gets to know",
         "One less logistics problem during an already demanding week"
       ],
-      "startingRate": "PLACEHOLDER — $500/day (confirm real rate with Carol before launch)",
+      "startingRate": "PLACEHOLDER — $500/day (confirm real rate with Carol S. before launch)",
       "cta": { "label": "Learn more", "href": "/services" },
       "imageAlt": "Child playing safely in a bright daycare room"
     },
@@ -295,7 +295,7 @@
         "Opportunities for social connection with peers",
         "Peace of mind for family members during work hours"
       ],
-      "startingRate": "PLACEHOLDER — $100/day (confirm real rate with Carol before launch)",
+      "startingRate": "PLACEHOLDER — $100/day (confirm real rate with Carol S. before launch)",
       "cta": { "label": "Learn more", "href": "/services" },
       "imageAlt": "Adults socializing together in a comfortable common room"
     },
@@ -327,7 +327,7 @@
         "Continuity of care in a familiar home environment",
         "Trained staff who adapt to your household's routine"
       ],
-      "startingRate": "PLACEHOLDER — $65/hour (confirm real rate with Carol before launch)",
+      "startingRate": "PLACEHOLDER — $65/hour (confirm real rate with Carol S. before launch)",
       "cta": { "label": "Learn more", "href": "/services" },
       "imageAlt": "Caregiver assisting a family member at home"
     }
